@@ -1,0 +1,116 @@
+body {
+    background: #eee;
+    /*font-family: 'Montserrat Alternates';*/
+    font-family: 'Nunito', sans-serif;
+}
+
+.custom-navbar {
+    background-color: white;
+    z-index: 1;
+    color: #444444;
+    height: 60px;
+    font-weight: 600;
+    padding-top: 12px;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #b5b5b5;
+}
+
+
+/*     
+    .custom-navbar {
+        background-color: rgb(119, 119, 119);
+        color: white;
+        z-index: 1;
+        height: 60px;
+        padding-top: 12px;
+        justify-content: center;
+    }
+     */
+
+h4 {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 2px;
+    font-size: 20pt;
+}
+
+.img-bcs-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: -40px;
+    margin-left: 10px;
+    z-index: 2;
+    float: top;
+    position: absolute;
+}
+
+.custom-cont {
+    margin-top: 50px;
+    padding: 10px 40px 10px 40px;
+}
+
+.col-one {
+    /* background-color: #fff; */
+    padding: 25px 20px 20px 20px;
+}
+
+.col-two {
+    /* background-color: #fff; */
+    padding: 25px 20px 20px 20px;
+}
+
+.fileview {
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 4px;
+}
+
+.head {
+    font-size: 20px;
+}
+
+.custom-textarea,
+.custom-textarea:hover,
+.custom-textarea:focus,
+.custom-textarea:active:focus,
+.custom-textarea:active {
+    border-color: #FFBB00;
+    border-width: 1px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12pt;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.btn,
+.btn:hover,
+.btn:active:focus {
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 4px;
+    background-color: #eee;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
+    font-size: 13pt;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 120px;
+}
+
+.btn {
+    border-color: #FEC106;
+    border-width: 1px;
+    font-weight: 550;
+    color: white;
+    background-color: #FEC106;
+}
+
+.custom-foot {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    margin-bottom: -50px;
+}

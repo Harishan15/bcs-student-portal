@@ -1,0 +1,350 @@
+.img-bcs-logo {
+    width: 90px;
+    height: 90px;
+    margin-top: 14px;
+    margin-left: 10px;
+    z-index: 2;
+    float: top;
+    position: fixed;
+}
+
+.name-text {
+    margin-right: 15px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.navbar {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #b5b5b5;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #eee;
+}
+
+.custom-foot {
+    position: relative;
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    flex-shrink: none;
+    /* margin-bottom: 00px; */
+    /* clear: both; */
+    /* margin-bottom: 0px;
+    padding-bottom: 0px; */
+}
+
+.custom-row {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main-container {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    justify-content: start;
+}
+
+.rounded-img {
+    border-radius: 5px;
+    border: 0px solid #fff;
+    box-shadow: 0px 0px 4px #fff;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    transition: transform .2s;
+}
+
+.rounded-img:hover {
+    box-shadow: #fff;
+    transform: scale(1.0);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: black;
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 85px;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    font-weight: 13px;
+    padding-left: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #F2B705;
+    color: white;
+}
+
+.dropdown-item:active {
+    background-color: #593B02;
+}
+
+.dropdown-menu {
+    min-width: 150px;
+    height: 150px;
+    /* min-height: 100px; */
+    font-size: 16px;
+}
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px;
+    margin-bottom: 5px;
+    align-content: center;
+}
+
+.no-btn,
+.dropdown-toggle,
+.no-btn:hover,
+.no-btn:active,
+.no-btn:focus,
+.no-btn:active:focus {
+    background-color: none;
+    border-width: 0px;
+    color: #222;
+    box-shadow: none;
+    padding: 0px;
+}
+
+.btn-img {
+    width: 90px;
+    height: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.color-card {
+    background-color: #fff;
+    /* background-image: linear-gradient(90deg, #1A2980, #26D0CE); */
+    transition: transform .2s;
+    /* Animation */
+    color: black;
+    border-radius: 10px;
+    border-left: 8px solid #000;
+}
+
+.color-card:hover {
+    transform: scale(1.007);
+    background-color: #FEC106;
+    /* background-color: #F21D2F; */
+    color: white;
+    /* border-left: 8px solid #730A26; */
+    border-left: 8px solid #D9042B;
+}
+
+
+/* CUSTOM RESPONSIVENESS START HERE */
+
+@media only screen and (min-width: 997px) {
+    .color-card {
+        min-height: 170px;
+    }
+    .rounded-img {
+        border-width: 5px;
+        width: 45px;
+        height: 45px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .btn-img {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+    }
+    .rounded-img {
+        border-width: 5px;
+        width: 45px;
+        height: 45px;
+        margin-left: 5px;
+    }
+    .color-card {
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .img-bcs-logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 14px;
+        margin-left: 8px;
+    }
+    .navbar-brand,
+    .navbar-brand:hover {
+        color: black;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 6px;
+        padding-right: 0px;
+        margin-right: 0px;
+        font-weight: 600;
+    }
+    .no-btn {
+        margin-left: 0px;
+        padding-right: 0px;
+        /* align-content: center;
+        height: 100px; */
+    }
+    .pr-name {
+        display: none;
+    }
+    .rounded-img {
+        border-width: 5px;
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    .column1 {
+        width: 75%;
+    }
+    .column2 {
+        display: 25%;
+    }
+    .color-card {
+        min-height: 160px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .btn-img {
+        width: 50px;
+        height: 50px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .headtext {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .column1 {
+        width: 75%;
+    }
+    .column2 {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width:371px) {
+    .btn-img {
+        width: 80px;
+        height: 80px;
+        padding: 0px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .rounded-img {
+        border: 1px solid #fff;
+        width: 40px;
+        height: 40px;
+    }
+    .column1 {
+        width: 75%;
+    }
+    .column2 {
+        width: 25%;
+    }
+    .headtext {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .btn-img {
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .rounded-img {
+        border: 1px solid #fff;
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    }
+    .no-btn {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .column1 {
+        width: 75%;
+    }
+    .column2 {
+        width: 25%;
+    }
+    .navbar-brand {
+        font-size: 15px;
+    }
+    .headtext {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .card-text {
+        font-size: 15px;
+    }
+    .dropdown-menu {
+        min-width: 90px;
+        font-size: 12px;
+        margin-left: 0px;
+    }
+}
+
+
+/* Navigation Bar Dropdown */
+
+.container01 {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: -7px;
+    padding: 7px 10px;
+    margin-right: 0px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    justify-content: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 22px;
+    height: 3px;
+    background-color: #4c4c4c;
+    margin: 3px 0px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-0px, 0px);
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(0px, 0px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}

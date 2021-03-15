@@ -1,0 +1,119 @@
+/*Body*/
+
+body {
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    background: #eee;
+    color: #666;
+    margin: 0;
+    height: 100%;
+}
+
+
+/*Form*/
+
+.login-container {
+    margin-top: -40px;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-form {
+    max-width: 100%;
+    width: 370px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-control {
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: #FFCD3A;
+    box-shadow: 0 0 0 0 #FFCD3A;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+/*
+.login-form a:hover {
+    color: #FFCD3A; 
+}
+*/
+
+
+/*Footer*/
+
+.custom-foot {
+    background-color: rgb(119, 119, 119);
+    color: white;
+}
+
+
+/*Navigation Bar*/
+
+.navcol {
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.navbar-brand {
+    padding-left: 0px;
+}
+
+.custom-nav {
+    background-color: rgb(119, 119, 119);
+    color: white;
+    z-index: 1;
+    height: 60px;
+    padding-top: 14px;
+}
+
+
+/*BCS Logo*/
+
+.bcs-logo {
+    margin-top: -40px;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/*Button*/
+
+.btn-custom {
+    background: #FFCD3A;
+    border-color: #FFCD3A;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-custom:focus {
+    box-shadow: #666;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active:focus,
+.btn-custom:active {
+    background: #FEC106;
+    border-color: #FEC106;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-custom {
+    height: 50px;
+    width: 120px;
+}
+
+.custom-text {
+    margin-top: 3px;
+}

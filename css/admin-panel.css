@@ -1,0 +1,358 @@
+.img-bcs-logo {
+    width: 90px;
+    height: 90px;
+    margin-top: 14px;
+    margin-left: 10px;
+    z-index: 2;
+    float: top;
+    position: fixed;
+}
+
+.navbar {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #b5b5b5;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #eee;
+}
+
+
+/* .container {
+    overflow: auto;
+} */
+
+.custom-foot {
+    position: relative;
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    flex-shrink: none;
+    /* margin-bottom: 00px; */
+    /* clear: both; */
+    /* margin-bottom: 0px;
+    padding-bottom: 0px; */
+}
+
+.custom-row {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main-container {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    justify-content: start;
+}
+
+.rounded-img {
+    border-radius: 40px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 4px black;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    transition: transform .2s;
+}
+
+.rounded-img:hover {
+    box-shadow: #000;
+    transform: scale(1.09);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: black;
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 85px;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+.dropdown-item {
+    font-weight: 13px;
+    padding-left: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #F2B705;
+    color: white;
+}
+
+.dropdown-item:active {
+    background-color: #593B02;
+}
+
+.dropdown-menu {
+    min-width: 100px;
+    height: 80px;
+    font-size: 15px;
+}
+
+.no-btn,
+.dropdown-toggle,
+.no-btn:hover,
+.no-btn:active,
+.no-btn:focus,
+.no-btn:active:focus {
+    background-color: none;
+    border-width: 0px;
+    color: #222;
+    box-shadow: none;
+    padding: 0px;
+}
+
+.btn-img {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.color-card {
+    background-color: #fff;
+    /* background-image: linear-gradient(270deg, #D9B5A0, #401309); */
+    transition: transform .2s;
+    /* Animation */
+    color: black;
+    border-radius: 10px;
+    border-left: 8px solid #000;
+}
+
+.color-card:hover {
+    transform: scale(1.007);
+    background-color: #F2CB05;
+    color: white;
+    border-left: 8px solid #F29F05;
+}
+
+
+/* .color-card1:hover {
+    transform: scale(1.007);
+    background-color: #F20519;
+    color: white;
+}
+
+.color-card2:hover {
+    transform: scale(1.007);
+    background-color: #3E00B2;
+    color: white;
+}
+
+.color-card3:hover {
+    transform: scale(1.007);
+    background-color: #10FF62;
+    color: white;
+}
+
+.color-card4:hover {
+    transform: scale(1.007);
+    background-color: #F2CB05;
+    color: white;
+} */
+
+.headtext {
+    font-weight: 500;
+}
+
+.head4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* .testborder {
+    border: 5px solid black;
+} */
+
+
+/* .color-card2 {
+    background-color: #F2B705;
+    background-image: linear-gradient(-45deg, #00BCE1, #008CCA);
+    color: black;
+}
+
+.color-card3 {
+    background-color: #F2B705;
+    background-image: linear-gradient(-45deg, #606B9D, #B27BC4);
+    color: black;
+}
+
+.color-card4 {
+    background-color: #F2B705;
+    background-image: linear-gradient(-45deg, #1961AE, #27357E);
+    color: black;
+} */
+
+
+/* .span-btn-img {
+    background-black red;
+} */
+
+.column1 {
+    width: 75%;
+}
+
+.column2 {
+    width: 25%;
+}
+
+
+/* CUSTOM RESPONSIVENESS START HERE */
+
+@media only screen and (min-width: 997px) {
+    .color-card {
+        min-height: 170px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    /* .btn-img {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+}
+
+*/ .rounded-img {
+    border-width: 5px;
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+.color-card {
+    min-height: 200px;
+}
+
+
+}
+@media only screen and (max-width: 650px) {
+    .img-bcs-logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 14px;
+        margin-left: 8px;
+    }
+    
+    .navbar-brand,
+    .navbar-brand:hover {
+        color: black;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 6px;
+        padding-right: 0px;
+        margin-right: 0px;
+        font-weight: 600;
+    }
+    
+    .no-btn {
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .pr-name {
+        display: none;
+    }
+    
+    .rounded-img {
+        border-width: 5px;
+        width: 35px;
+        height: 35px;
+        margin-left: 20px;
+    }
+    
+    .column1 {
+        width: 75%;
+    }
+    
+    .column2 {
+        display: 25%;
+    }
+    
+    .color-card {
+        min-height: 160px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* .btn-img {
+        width: 50px;
+        height: 50px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    } */
+    
+    .headtext {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .column1 {
+        width: 75%;
+    }
+    
+    .column2 {
+        width: 25%;
+    }
+}
+@media only screen and (min-width:371px) {
+    .btn-img {
+        width: 100px;
+        height: 100px;
+        padding: 0px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        margin-left: 0px;
+        margin-right: 100px;
+    }
+    
+    .rounded-img {
+        border: 1px solid #fff;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .column1 {
+        width: 75%;
+    }
+    
+    .column2 {
+        width: 25%;
+    }
+    
+    .headtext {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .card-text {
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .btn-img {
+        width: 75px;
+        height: 75px;
+        margin-left: -20px;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    
+    .column1 {
+        width: 75%;
+    }
+    
+    .column2 {
+        width: 25%;
+    }
+    
+    .color-card {
+        min-height: 160px;
+    }
+}

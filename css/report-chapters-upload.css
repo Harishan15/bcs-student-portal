@@ -1,0 +1,143 @@
+    .custom-h3 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        color: black;
+    }
+    
+    body {
+        background: #eee;
+        /*font-family: 'Montserrat Alternates';*/
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .custom-navbar {
+        background-color: white;
+        z-index: 1;
+        color: #444444;
+        height: 60px;
+        font-weight: 600;
+        padding-top: 12px;
+        justify-content: center;
+        box-shadow: 0px 3px 5px #b5b5b5;
+    }
+    /*     
+    .custom-navbar {
+        background-color: rgb(119, 119, 119);
+        color: white;
+        z-index: 1;
+        height: 60px;
+        padding-top: 12px;
+        justify-content: center;
+    }
+     */
+    
+    h4 {
+        text-align: center;
+        font-weight: 600;
+        font-family: 'Nunito', sans-serif;
+        padding-top: 2px;
+        font-size: 20pt;
+    }
+    
+    .img-bcs-logo {
+        width: 100px;
+        height: 100px;
+        margin-top: -40px;
+        margin-left: 10px;
+        z-index: 2;
+        float: top;
+        position: absolute;
+    }
+    
+    .button {
+        opacity: 0.8;
+        width: 300px;
+        height: 150px;
+        margin-right: 10pt;
+        margin-left: 10pt;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 55pt;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 10px;
+        /*background-color: #FEC106;*/
+        padding-top: 40px;
+    }
+    
+    @media only screen and (min-width:md) {
+        .button {
+            align-self: auto;
+            width: 350px;
+            height: 150px;
+            margin-top: 10px;
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    }
+    
+    @media only screen and (min-width: lg) {
+        .button {
+            align-self: auto;
+            width: 350px;
+            height: 150px;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+    }
+    
+    @media only screen and (min-width: xl) {
+        .button {
+            align-self: auto;
+            width: 350px;
+            height: 150px;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+    }
+    
+    .row1 {
+        margin-top: 40pt;
+    }
+    
+    .h3-1 {
+        font-size: 20pt;
+        font-weight: 100;
+    }
+    
+    .h2-1 {
+        font-size: 13pt;
+        font-weight: 500;
+        color: black;
+        font-family: 'Montserrat Alternates';
+    }
+    
+    .custom-foot {
+        background-color: rgb(56, 56, 56);
+        color: white;
+        margin-bottom: -50px;
+    }
+    
+    input[type="file"] {
+        display: none;
+    }
+    /* .custom-file-upload {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 0px 0px;
+        padding-top: 40pt;
+        cursor: pointer;
+    } */
+    
+    .file-btn {
+        padding-top: 40pt;
+    }

@@ -1,0 +1,43 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #eee;
+}
+
+.img-bcs-logo {
+    width: 90px;
+    height: 90px;
+    margin-top: 14px;
+    margin-left: 10px;
+    z-index: 2;
+    float: top;
+    position: fixed;
+}
+
+.navbar {
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #b5b5b5;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: black;
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 85px;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+.no-btn,
+.dropdown-toggle,
+.no-btn:hover,
+.no-btn:active,
+.no-btn:focus,
+.no-btn:active:focus {
+    background-color: none;
+    border-width: 0px;
+    color: #222;
+    box-shadow: none;
+    padding: 0px;
+}

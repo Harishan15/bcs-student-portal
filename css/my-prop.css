@@ -1,0 +1,86 @@
+h3 {
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    color: black;
+}
+
+.custom-navbar {
+    background-color: rgb(119, 119, 119);
+    z-index: 1;
+    height: 60px;
+    padding-top: 12px;
+    color: white;
+    font-family: 'Montserrat Alternates';
+    padding-top: 12px;
+}
+
+.img-bcs-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: -40px;
+    margin-left: 10px;
+    z-index: 2;
+    float: top;
+    position: absolute;
+}
+
+.button {
+    opacity: 0.8;
+    width: 350px;
+    height: 120px;
+    margin-right: 10pt;
+    margin-left: 10pt;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55pt;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FEC106;
+}
+
+@media only screen and (min-width:md) {
+    .button {
+        align-self: auto;
+        width: 350px;
+        height: 150px;
+        margin-top: 10px;
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: lg) {
+    .button {
+        align-self: auto;
+        width: 350px;
+        height: 150px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: xl) {
+    .button {
+        align-self: auto;
+        width: 350px;
+        height: 150px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+}
+
+.custom-foot {
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+.row1 {
+    margin-top: 80pt;
+}
+
+.h3-1 {
+    font-size: 25pt;
+    font-weight: 100;
+}

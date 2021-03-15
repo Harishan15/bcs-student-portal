@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": true,
+            "database": "bcs_student_portal",
+            "dialect": "MySQL",
+            "name": "BCS_Student_Portal_Connection",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
