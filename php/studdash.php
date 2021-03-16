@@ -4,6 +4,8 @@ include "./config.php";
 
 $useremail = $_SESSION['useremail'];
 $sid = $_SESSION['student-id'];
+// echo($sid);
+
 
 $query2 = "SELECT p_id FROM student_document WHERE s_id = ?";
 $stmt2 = $con->prepare($query2);
@@ -46,6 +48,17 @@ if ($row5 = $stmt5->fetch(PDO::FETCH_ASSOC)) {
     $auth_approval = $row5['auth_approval'];
 }
 
+
+//getting the PID
+$query6 = 'SELECT * FROM student_document WHERE s_id = :sid' ;
+$stmt6 = $con->prepare($query6);
+$stmt6->execute(['sid' => $sid]);
+if ($row6 = $stmt6->fetch(PDO::FETCH_ASSOC)) {
+    $pid = $row6['p_id'];
+}
+
+// echo('<br>');
+// echo($sid);
 
 // 
 

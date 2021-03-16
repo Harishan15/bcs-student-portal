@@ -24,6 +24,12 @@ if ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
     $aemail = $row2['a_email'];
 }
 
+if(!isset($semail)){
+    $semail = "";
+} elseif (!isset($aemail)) {
+    $aemail = "";
+}
+
 try{
     if($semail == $useremail and $newpassword == $confirmpassword){
             $query3 = 'UPDATE student SET s_password = ? WHERE s_email = ?';

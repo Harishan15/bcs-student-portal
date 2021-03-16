@@ -37,8 +37,9 @@ try {
     $stmt3 = $con->prepare($query3);
     $stmt3->bindParam(1, $useremail);
     $stmt3->execute();
-    $row3 = $stmt3->fetch(PDO::FETCH_ASSOC);
-    $sstatus = $row3['s_status'];
+    if ($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)) {
+        $sstatus = $row3['s_status'];
+    }
 
     // checking the status of the authenticator
     $query4 = "SELECT a_status FROM authenticator WHERE a_email = ?";
@@ -74,7 +75,6 @@ try {
     $stmt7->execute();
     if ($row7 = $stmt7->fetch(PDO::FETCH_ASSOC)) {
         $sid = $row7['s_id'];
-        $_SESSION['student-id'] = $sid;
     }
 
     //getting the student id
@@ -84,11 +84,28 @@ try {
     $stmt8->execute();
     if ($row8 = $stmt8->fetch(PDO::FETCH_ASSOC)) {
         $aid = $row8['a_id'];
-        $_SESSION['authenticator-id'] = $aid;
     }
 
     //session variables
     $_SESSION['useremail'] = $useremail;
+
+    if(!isset($semail)){
+        $semail = "";
+    } 
+    if (!isset($aemail)) {
+        $aemail = "";
+    }
+    if (isset($sid)) {
+        $_SESSION['student-id'] = $sid;
+        // echo("worked SID");
+    }
+    if (isset($aid)) {
+        $_SESSION['authenticator-id'] = $aid;
+        // echo("worked AID");
+    }
+
+    // echo($aid);
+    
 
 
     if($useremail == ($semail || $aemail)){

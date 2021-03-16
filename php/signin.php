@@ -94,6 +94,12 @@ try {
     //session variables
     $_SESSION['useremail'] = $useremail;
 
+    if(!isset($semail)){
+        $semail = "";
+    } elseif (!isset($aemail)) {
+        $aemail = "";
+    }
+
     if ($useremail == ($semail || $aemail)) {
         // account available
         if ($useremail == $semail) {

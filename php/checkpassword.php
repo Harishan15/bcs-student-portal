@@ -6,8 +6,23 @@ include "./config.php";
 
 $userpassword = $_POST['userpassword'];
 $useremail = $_SESSION['useremail'];
-$aid = isset($_SESSION['authenticator-id']);
-$sid = $_SESSION['student-id'];
+
+
+if (isset($_SESSION['authenticator-id'])) {
+    $aid = $_SESSION['authenticator-id'];
+    $_SESSION['authenticator-id'] = $aid;
+
+    // echo("AID <br/>");
+    // echo($aid);
+}
+if (isset($_SESSION['student-id'])) {
+    $sid = $_SESSION['student-id'];
+    $_SESSION['student-id'] = $sid;
+
+    // echo("SID <br/>");
+    // echo($sid);
+}
+
 
 try {
     // checking the email of the student    
@@ -49,12 +64,25 @@ try {
     }
 
     //session variables
-    $_SESSION['student-id'] = $sid;
-    $_SESSION['authenticator-id'] = $aid;
+    // $_SESSION['student-id'] = $sid;
+    // $_SESSION['authenticator-id'] = $aid;
     $_SESSION['useremail'] = $useremail;
     $_SESSION['userpassword'] = $userpassword;
 
-    
+    if(!isset($semail)){
+        $semail = "";
+        // echo("No S-email");
+    }
+    if (!isset($aemail)) {
+        $aemail = "";
+        // echo("No A-email");
+    }
+    if (!isset($spassword)) {
+        $spassword = "";
+        // echo("No S-email");
+    }
+
+
     if ($useremail == ($semail || $aemail)) {
         // account available
         if ($userpassword == $spassword) {

@@ -31,6 +31,7 @@ try{
     $stmt = $con -> prepare($sql);
     $stmt -> execute(['p_title'=>$project_title,'p_level'=>$project_level,'submonth'=>$submonth,'subyear'=>$subyear,'attempt'=>$attempt]);
     move_uploaded_file($file_tmp,$location.$newfilename);
+    
     //insert into student_document table
     $sql = 'INSERT INTO student_document(d_id,p_id,s_id,sub_date,doc_path,bcs_approval) VALUES(:d_id,:p_id,:s_id,:sub_date,:doc_path,:bcs_approval)';
     $stmt = $con -> prepare($sql);
@@ -43,6 +44,9 @@ try{
     $prid = $row8['p_id'];
     $d_id = 1;
     $stmt -> execute(['d_id'=>$d_id,'p_id'=>$prid,'s_id'=>$sid,'sub_date'=>$date,'doc_path'=>$location.$newfilename,'bcs_approval'=>1]);
+
+
+    
     echo '<script> alert("Proposal Uploaded!!"); window.location.href = "../pages/student-dashboardv3.php" </script>';
 
 }

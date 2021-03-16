@@ -5,8 +5,23 @@ session_start();
 
 $userpassword = $_POST['userpassword'];
 $useremail = $_SESSION['useremail'];
-$aid = $_SESSION['authenticator-id'];
-$sid = $_SESSION['student-id'];
+// $aid = $_SESSION['authenticator-id'];
+// $sid = $_SESSION['student-id'];
+
+if (isset($_SESSION['authenticator-id'])) {
+    $aid = $_SESSION['authenticator-id'];
+    $_SESSION['authenticator-id'] = $aid;
+
+    // echo("AID <br/>");
+    // echo($aid);
+}
+if (isset($_SESSION['student-id'])) {
+    $sid = $_SESSION['student-id'];
+    $_SESSION['student-id'] = $sid;
+
+    // echo("SID <br/>");
+    // echo($sid);
+}
 
 // checking the password of the student
 $query1 = "SELECT s_password FROM student WHERE s_email = ?";
@@ -42,6 +57,16 @@ if ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
     $aemail = $row2['a_email'];
 }
 
+
+if(!isset($semail)){
+    $semail = "";
+}
+if (!isset($aemail)) {
+    $aemail = "";
+}
+if (!isset($spassword)) {
+    $spassword = "";
+}
 
 try{
     // Password Checking
